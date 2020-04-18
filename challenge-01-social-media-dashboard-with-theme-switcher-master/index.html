@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Challenge 01 - Social Media Dashboard with theme switcher</title>
+    <link rel="stylesheet" href="dist/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="wrapper flex flex-wrap">
+        <div>
+            <h1>Social Media Dashboard</h1>
+            <p>Total Followers: 23,004</p>
+        </div>
+        <div class="theme-switch">
+            <input type="checkbox" id="darkmode" value="dark"><label for="darkmode">Dark Mode</label>
+        </div>
+    </div>
+</header>
+<main class="flex-grow-1">
+    <section class="wrapper mb-2 md:mb-5">
+        <div class="row">
+            <div class="col-12 md:col-6 lg:col-3 mb-4 lg:mb-0">
+                <a href="#" class="stat-link">
+                    <article class="stat stat--highlight" data-sn="facebook">
+                        <div class="stat__social-network">
+                            <img src="images/icon-facebook.svg" alt="">
+                            <span class="stat__social-network__user">@nathanf</span>
+                        </div>
+                        <div class="stat__value">1987</div>
+                        <div class="stat__label">Followers</div>
+                        <div class="stat__difference stat__difference--positive">
+                            <img src="images/icon-up.svg" alt="">
+                            12 Today
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3 mb-4 lg:mb-0">
+                <a href="#" class="stat-link">
+                    <article class="stat stat--highlight" data-sn="twitter">
+                        <div class="stat__social-network">
+                            <img src="images/icon-twitter.svg" alt="">
+                            <span class="stat__social-network__user">@nathanf</span>
+                        </div>
+                        <div class="stat__value">1044</div>
+                        <div class="stat__label">Followers</div>
+                        <div class="stat__difference stat__difference--positive">
+                            <img src="images/icon-up.svg" alt="">
+                            99 Today
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3 mb-4 lg:mb-0">
+                <a href="#" class="stat-link">
+                    <article class="stat stat--highlight" data-sn="instagram">
+                        <div class="stat__social-network">
+                            <img src="images/icon-instagram.svg" alt="">
+                            <span class="stat__social-network__user">@realnathanf</span></div>
+                        <div class="stat__value">11k</div>
+                        <div class="stat__label">Followers</div>
+                        <div class="stat__difference stat__difference--positive">
+                            <img src="images/icon-up.svg" alt="">
+                            1099 Today
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3 mb-4 lg:mb-0">
+                <a href="#" class="stat-link">
+                    <article class="stat stat--highlight" data-sn="youtube">
+                        <div class="stat__social-network">
+                            <img src="images/icon-youtube.svg" alt="">
+                            <span class="stat__social-network__user">Nathan F.</span></div>
+                        <div class="stat__value">8239</div>
+                        <div class="stat__label">Subscribers</div>
+                        <div class="stat__difference stat__difference--negative">
+                            <img src="images/icon-down.svg" alt="">
+                            144 Today
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper">
+        <h2 class="mb-4">Overview - Today</h2>
+        <div class="row">
+            <div class="col-12 md:col-6 lg:col-3 mb-3 md:mb-4">
+                <a href="#" class="stat-link">
+                    <article class="stat">
+                        <div class="stat__social-network">
+                            <img src="images/icon-facebook.svg" alt="">
+                            <span class="stat__social-network__user">Nathan F.</span></div>
+                        <div class="stat__label">Page Views</div>
+                        <div class="stat__value">87</div>
+                        <div class="stat__difference stat__difference--positive">
+                            <img src="images/icon-up.svg" alt="">
+                            3%
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3 mb-3 md:mb-4">
+                <a href="#" class="stat-link">
+                    <article class="stat">
+                        <div class="stat__social-network">
+                            <img src="images/icon-facebook.svg" alt="">
+                            <span class="stat__social-network__user">Nathan F.</span></div>
+                        <div class="stat__label">Likes</div>
+                        <div class="stat__value">52</div>
+                        <div class="stat__difference stat__difference--negative">
+                            <img src="images/icon-down.svg" alt="">2%
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3 mb-3 md:mb-4">
+                <a href="#" class="stat-link">
+                    <article class="stat">
+                        <div class="stat__social-network">
+                            <img src="images/icon-instagram.svg" alt="">
+                            <span class="stat__social-network__user">Nathan F.</span></div>
+                        <div class="stat__label">Likes</div>
+                        <div class="stat__value">5462</div>
+                        <div class="stat__difference stat__difference--positive">
+                            <img src="images/icon-up.svg" alt="">
+                            2257%
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3 mb-3 md:mb-4">
+                <a href="#" class="stat-link">
+                    <article class="stat">
+                        <div class="stat__social-network">
+                            <img src="images/icon-instagram.svg" alt="">
+                            <span class="stat__social-network__user">Nathan F.</span></div>
+                        <div class="stat__label">Profile Views</div>
+                        <div class="stat__value">52k</div>
+                        <div class="stat__difference stat__difference--positive">
+                            <img src="images/icon-up.svg" alt="">
+                            1375%
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3 mb-3 md:mb-4">
+                <a href="#" class="stat-link">
+                    <article class="stat">
+                        <div class="stat__social-network">
+                            <img src="images/icon-twitter.svg" alt="">
+                            <span class="stat__social-network__user">Nathan F.</span></div>
+                        <div class="stat__label">Retweets</div>
+                        <div class="stat__value">117</div>
+                        <div class="stat__difference stat__difference--positive">
+                            <img src="images/icon-up.svg" alt="">
+                            303%
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3 mb-3 md:mb-4">
+                <a href="#" class="stat-link">
+                    <article class="stat">
+                        <div class="stat__social-network">
+                            <img src="images/icon-twitter.svg" alt="">
+                            <span class="stat__social-network__user">Nathan F.</span></div>
+                        <div class="stat__label">Likes</div>
+                        <div class="stat__value">507</div>
+                        <div class="stat__difference stat__difference--positive">
+                            <img src="images/icon-up.svg" alt="">
+                            553%
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3 mb-3 md:mb-4">
+                <a href="#" class="stat-link">
+                    <article class="stat">
+                        <div class="stat__social-network">
+                            <img src="images/icon-youtube.svg" alt="">
+                            <span class="stat__social-network__user">Nathan F.</span></div>
+                        <div class="stat__label">Likes</div>
+                        <div class="stat__value">107</div>
+                        <div class="stat__difference stat__difference--negative">
+                            <img src="images/icon-down.svg" alt="">
+                            19%
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="col-12 md:col-6 lg:col-3 mb-3 md:mb-4">
+                <a href="#" class="stat-link">
+                    <article class="stat">
+                        <div class="stat__social-network">
+                            <img src="images/icon-youtube.svg" alt="">
+                            <span class="stat__social-network__user">Nathan F.</span></div>
+                        <div class="stat__label">Total Views</div>
+                        <div class="stat__value">1407</div>
+                        <div class="stat__difference stat__difference--negative">
+                            <img src="images/icon-down.svg" alt="">
+                            12%
+                        </div>
+                    </article>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Simon Lemoine</a>.
+</footer>
+<script>
+    (function () {
+        let darkmode = document.getElementById('darkmode');
+        let storage = window.localStorage;
+
+        if (storage.getItem('darkmode') === null) {
+            storage.setItem('darkmode', false);
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                storage.setItem('darkmode', true);
+            }
+        }
+
+        darkmode.checked = (storage.getItem('darkmode') === 'true');
+        document.querySelector('body').dataset.theme = darkmode.checked ? "dark" : "light";
+
+        darkmode.addEventListener('change', function () {
+            setThemeTransition();
+            storage.setItem('darkmode', this.checked);
+            document.querySelector('body').dataset.theme = this.checked ? "dark" : "light";
+        });
+
+        function ready(fn) {
+            if (document.readyState != 'loading') {
+                fn();
+            } else {
+                document.addEventListener('DOMContentLoaded', fn);
+            }
+        }
+
+        function setThemeTransition() {
+            document.documentElement.style.setProperty('--theme-transition', '.3s');
+        }
+
+        ready(function () {
+            setTimeout(function () {
+                setThemeTransition();
+            }, 300);
+        });
+    })();
+</script>
+</body>
+</html>

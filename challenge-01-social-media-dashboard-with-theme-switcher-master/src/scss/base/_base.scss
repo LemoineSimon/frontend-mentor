@@ -1,0 +1,82 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: calc(1em * .625);
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: $font-family;
+  font-size: 1.6rem;
+  color: var(--text-color);
+  background-color: var(--body-bg);
+  @include theme-transition('background-color, color');
+}
+
+header {
+  padding: 4rem 2.5rem var(--header-offset);
+  background-color: var(--body-bg-accent);
+  border-radius: 1rem;
+  @include theme-transition('background-color');
+  @include medium {
+    padding: 4rem 4rem var(--header-offset);
+  }
+}
+
+main {
+  margin-top: calc(var(--header-offset) * (-2.5 / 3));
+  padding: 0 2.5rem;
+  @include medium {
+    margin-top: calc(var(--header-offset) * (-3.5 / 5));
+    padding: 0 4rem;
+  }
+}
+
+footer {
+  background-color: var(--body-bg-accent);
+  padding: 4rem 2.5rem;
+  @include theme-transition('background-color');
+}
+
+footer a {
+  color: var(--text-color-accent);
+  @include theme-transition('color');
+}
+
+h1 {
+  font-size: 2.4rem;
+  color: var(--text-color-accent);
+  font-weight: bold;
+  @include theme-transition('color');
+  @include medium {
+    font-size: 2.8rem;
+    letter-spacing: .005em;
+  }
+}
+
+h1 + p {
+  font-weight: bold;
+  margin-top: .5em;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: var(--title-color);
+  @include theme-transition('color');
+}
+
+p {
+  font-size: 1.4rem;
+}
