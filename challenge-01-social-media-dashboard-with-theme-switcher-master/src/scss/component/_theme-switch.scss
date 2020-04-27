@@ -12,7 +12,7 @@
 }
 
 .theme-switch input {
-  display: none;
+  @include sr-only;
 }
 
 .theme-switch label {
