@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <title>Frontend Mentor | Challenge 01 - Social Media Dashboard with theme switcher</title>
-    <link rel="stylesheet" href="/dist/app.css">
+    <link rel="stylesheet" href="./dist/app.css">
     <link href="https://fonts.googleapis.com/css?family=Inter:300,400,700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -220,19 +220,13 @@
     (function () {
         let darkmode = document.getElementById('darkmode');
         let storage = window.localStorage;
+        let isDarkMode = storage.getItem('darkmode') === null ? (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) : storage.getItem('darkmode') === 'true';
 
-        if (storage.getItem('darkmode') === null) {
-            storage.setItem('darkmode', false);
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                storage.setItem('darkmode', true);
-            }
-        }
-
-        darkmode.checked = (storage.getItem('darkmode') === 'true');
-        document.querySelector('body').dataset.theme = darkmode.checked ? "dark" : "light";
+        storage.setItem('darkmode', isDarkMode);
+        darkmode.checked = isDarkMode;
+        document.querySelector('body').dataset.theme = isDarkMode ? "dark" : "light";
 
         darkmode.addEventListener('change', function () {
-            setThemeTransition();
             storage.setItem('darkmode', this.checked);
             document.querySelector('body').dataset.theme = this.checked ? "dark" : "light";
         });
